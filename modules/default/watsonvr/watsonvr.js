@@ -15,12 +15,12 @@ Module.register("watsonvr", {
 
     // Define required scripts.
     getScripts: function() {
-        return ["watson-developer-cloud", "fs"];
+        return ["watson-developer-cloud.js"];
     },
 
     // Override dom generator.
     getDom: function () {
-        Log.error("RUNNING VISUAL RECOG");
+        Log.info("RUNNING VISUAL RECOG");
         var wrapper = document.createElement("div");
         /*var visual_recognition = watson.visual_recognition({
             api_key: '0121N-TKK90-18D9D-0A2A0-3DVH1',
