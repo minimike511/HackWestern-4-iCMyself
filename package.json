@@ -62,12 +62,13 @@
     "iconv-lite": "^0.4.19",
     "mocha-logger": "^1.0.5",
     "moment": "latest",
+    "python-shell": "^0.4.0",
     "request": "^2.81.0",
     "rrule-alt": "^2.2.5",
     "simple-git": "^1.73.0",
     "socket.io": "^2.0.2",
     "valid-url": "latest",
     "walk": "latest",
-    "watson-developer-cloud": "latest"
+    "watson-developer-cloud": "^2.42.0"
   }
 }
