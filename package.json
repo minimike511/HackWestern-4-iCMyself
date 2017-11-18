@@ -69,6 +69,7 @@
     "socket.io": "^2.0.2",
     "valid-url": "latest",
     "walk": "latest",
-    "watson-developer-cloud": "^2.42.0"
+    "watson-developer-cloud": "latest",
+    "python-shell": "latest"
   }
 }
