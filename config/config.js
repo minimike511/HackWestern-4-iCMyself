@@ -22,7 +22,7 @@ var config = {
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
 	language: "en",
-	timeFormat: 24,
+	timeFormat: 12,
 	units: "metric",
 
 	modules: [
@@ -50,10 +50,10 @@ var config = {
 				]
 			}
 		},
-		{
+		/*{
 			module: "compliments",
 			position: "lower_third"
-		},
+		},*/
 		{
 			module: "currentweather",
 			position: "top_right",
@@ -73,7 +73,7 @@ var config = {
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
-		{
+		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
@@ -85,6 +85,12 @@ var config = {
 				],
 				showSourceTitle: true,
 				showPublishDate: true
+			}
+		},*/
+		{
+			module: "helloworld",
+			position: "lower_third",	// This can be any of the regions.
+			config: {
 			}
 		},
 	]
