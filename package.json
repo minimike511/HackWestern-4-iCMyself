@@ -54,12 +54,12 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "colors": "^1.1.2",
-    "electron": "^1.6.10",
+    "electron": "^1.8.1",
     "express": "^4.15.3",
     "express-ipfilter": "0.3.1",
     "feedme": "latest",
     "helmet": "^3.6.1",
-    "iconv-lite": "latest",
+    "iconv-lite": "^0.4.19",
     "mocha-logger": "^1.0.5",
     "moment": "latest",
     "request": "^2.81.0",
@@ -68,7 +68,6 @@
     "socket.io": "^2.0.2",
     "valid-url": "latest",
     "walk": "latest",
-    "watson-developer-cloud":"latest"
+    "watson-developer-cloud": "^2.42.0"
   }
 }
-
