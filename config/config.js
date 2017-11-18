@@ -88,7 +88,7 @@ var config = {
 			}
 		},*/
 		{
-			module: "helloworld",
+			module: "watsontest",
 			position: "lower_third",	// This can be any of the regions.
 			config: {
 			}
