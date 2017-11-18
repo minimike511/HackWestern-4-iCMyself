@@ -6,32 +6,43 @@ var visual_recognition = watson.visual_recognition({
     version_date: '2016-05-20'
 });
 
-var params = {
-    images_file: fs.createReadStream('./db/obama.jpg')
-};
 
-visual_recognition.detectFaces(params,
-    function(err, response) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(JSON.stringify(response, null, 2));
-        }
-    });
-
-console.log("ABCDEDFEJHFJKHFJKDSHJKFHSKJFHDJKSFHJKSDHFJKDSHFKJSHDKJFHDSF");
-
-Module.register("watsonvr",{
-
+Module.register("watsonvr", {
     // Default module config.
     defaults: {
-        text: "Hello World!"
+        text: "abc"
     },
 
     // Override dom generator.
-    getDom: function() {
+    getDom: function () {
         var wrapper = document.createElement("div");
-        wrapper.innerHTML = this.config.text;
+
+        try {
+            var params = {
+                images_file: fs.createReadStream('./db/obama.jpg')
+            };
+
+
+            visual_recognition.detectFaces(params, function (err, response) {
+                if (err) {
+                    wrapper.innerHTML = err;
+                } else {
+                    wrapper.innerHTML = JSON.stringify(response, null, 2);
+                    wrapper.innerHTML = "Hello";
+                }
+            });
+        } catch (e) {
+            wrapper.innerHTML = e.toString();
+        }
+
+        //wrapper.innerHTML = this.config.text;
+        //wrapper.innerHTML = Math.random();
         return wrapper;
-    }
+    },
+    start: function () {
+        var self = this;
+        setInterval(function () {
+            self.updateDom(); // no speed defined, so it updates instantly.
+        }, 1000); //perform every 1000 milliseconds.
+    },
 });
