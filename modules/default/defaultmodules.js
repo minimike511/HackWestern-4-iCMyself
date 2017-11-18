@@ -17,6 +17,7 @@ var defaultModules = [
 	"newsfeed",
 	"weatherforecast",
     "watsonvr",
+	"MMM-Facial-Recognition",
 	"updatenotification"
 ];
 

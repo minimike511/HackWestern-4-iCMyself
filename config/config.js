@@ -88,7 +88,7 @@ var config = {
 			}
 		},*/
 		{
-			module: "watsonvr",
+			module: "MMM-Facial-Recognition",
 			position: "lower_third",	// This can be any of the regions.
 			config: {
 			}
