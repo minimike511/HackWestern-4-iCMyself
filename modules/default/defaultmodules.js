@@ -16,6 +16,7 @@ var defaultModules = [
 	"helloworld",
 	"newsfeed",
 	"weatherforecast",
+    "watsontest",
 	"updatenotification"
 ];
 
