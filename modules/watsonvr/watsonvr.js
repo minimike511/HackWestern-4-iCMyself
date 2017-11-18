@@ -12,22 +12,26 @@ var params = {
 
 visual_recognition.detectFaces(params,
     function(err, response) {
-        if (err)
+        if (err) {
             console.log(err);
-        else
+        } else {
             console.log(JSON.stringify(response, null, 2));
-    });
+        }
+});
+    
+    console.log("ABCDEDFEJHFJKHFJKDSHJKFHSKJFHDJKSFHJKSDHFJKDSHFKJSHDKJFHDSF");
 
 Module.register("watsonvr",{
-    // Default module config.
-    defaults: {
-        text: "Hello World!"
-    },
 
-    // Override dom generator.
-    getDom: function() {
-        var wrapper = document.createElement("div");
-        wrapper.innerHTML = this.config.text;
-        return wrapper;
-    }
+	// Default module config.
+	defaults: {
+		text: "Hello World!"
+	},
+
+	// Override dom generator.
+	getDom: function() {
+		var wrapper = document.createElement("div");
+		wrapper.innerHTML = this.config.text;
+		return wrapper;
+	}
 });
