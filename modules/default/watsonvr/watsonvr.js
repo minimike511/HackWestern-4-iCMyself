@@ -16,8 +16,7 @@ Module.register("watsonvr", {
     // Override dom generator.
     getDom: function () {
         var wrapper = document.createElement("div");
-
-        try {
+        /*try {
             var params = {
                 images_file: fs.createReadStream('./db/obama.jpg')
             };
@@ -33,10 +32,10 @@ Module.register("watsonvr", {
             });
         } catch (e) {
             wrapper.innerHTML = e.toString();
-        }
+        }*/
 
-        //wrapper.innerHTML = this.config.text;
-        //wrapper.innerHTML = Math.random();
+        wrapper.innerHTML = this.config.text;
+        wrapper.innerHTML = Math.random();
         return wrapper;
     },
     start: function () {
