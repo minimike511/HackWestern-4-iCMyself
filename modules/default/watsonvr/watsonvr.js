@@ -28,7 +28,7 @@ Module.register("watsonvr", {
             version_date: '2016-05-20'
         });
 
-        try {
+        /*try {
             var params = {
                 images_file: fs.createReadStream('./db/obama.jpg')
             };
@@ -43,10 +43,10 @@ Module.register("watsonvr", {
             });
         } catch (e) {
             Log.info(e);
-        }
+        }*/
 
         // wrapper.innerHTML = this.config.text;
-        // wrapper.innerHTML = Math.random();
+        wrapper.innerHTML = Math.random();
         return wrapper;
     },
     start: function () {
