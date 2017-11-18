@@ -1,7 +1,7 @@
 var watson = require('watson-developer-cloud');
 var fs = require('fs');
 var visual_recognition = watson.visual_recognition({
-    api_key: '{api_key}',
+    api_key: '{0121N-TKK90-18D9D-0A2A0-3DVH1}',
     version: 'v3',
     version_date: '2016-05-20'
 });
