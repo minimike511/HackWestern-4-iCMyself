@@ -7,7 +7,7 @@ var visual_recognition = watson.visual_recognition({
 });
 
 var params = {
-    images_file: fs.createReadStream('./resources/obama.jpg')
+    images_file: fs.createReadStream('./db/obama.jpg')
 };
 
 visual_recognition.detectFaces(params,
