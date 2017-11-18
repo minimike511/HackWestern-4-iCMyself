@@ -51,7 +51,7 @@ var config = {
 			}
 		},
 		{
-			module: "compliments",
+			module: "watsontest",
 			position: "lower_third"
 		},
 		{
