@@ -20,7 +20,7 @@ Module.register("watsonvr", {
 
     // Override dom generator.
     getDom: function () {
-        Log.log("RUNNING VISUAL RECOG");
+        Log.error("RUNNING VISUAL RECOG");
         var wrapper = document.createElement("div");
         /*var visual_recognition = watson.visual_recognition({
             api_key: '0121N-TKK90-18D9D-0A2A0-3DVH1',
