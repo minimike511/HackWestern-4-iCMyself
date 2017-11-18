@@ -67,6 +67,8 @@
     "simple-git": "^1.73.0",
     "socket.io": "^2.0.2",
     "valid-url": "latest",
-    "walk": "latest"
+    "walk": "latest",
+    "watson-developer-cloud":"latest"
   }
 }
+
