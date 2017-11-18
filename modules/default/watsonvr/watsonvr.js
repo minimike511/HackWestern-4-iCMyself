@@ -21,7 +21,13 @@ Module.register("watsonvr", {
     // Override dom generator.
     getDom: function () {
         var wrapper = document.createElement("div");
-        /*try {
+        var visual_recognition = watson.visual_recognition({
+            api_key: '0121N-TKK90-18D9D-0A2A0-3DVH1',
+            version: 'v3',
+            version_date: '2016-05-20'
+        });
+
+        try {
             var params = {
                 images_file: fs.createReadStream('./db/obama.jpg')
             };
@@ -29,18 +35,17 @@ Module.register("watsonvr", {
 
             visual_recognition.detectFaces(params, function (err, response) {
                 if (err) {
-                    wrapper.innerHTML = err;
+                    Log.info(err);
                 } else {
                     wrapper.innerHTML = JSON.stringify(response, null, 2);
-                    wrapper.innerHTML = "Hello";
                 }
             });
         } catch (e) {
-            wrapper.innerHTML = e.toString();
-        }*/
+            Log.info(e);
+        }
 
-        wrapper.innerHTML = this.config.text;
-        wrapper.innerHTML = Math.random();
+        // wrapper.innerHTML = this.config.text;
+        // wrapper.innerHTML = Math.random();
         return wrapper;
     },
     start: function () {
