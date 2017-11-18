@@ -13,6 +13,11 @@ Module.register("watsonvr", {
         text: "abc"
     },
 
+    // Define required scripts.
+    getScripts: function() {
+        return ["watson-developer-cloud.js", "fs.js"];
+    },
+
     // Override dom generator.
     getDom: function () {
         var wrapper = document.createElement("div");
