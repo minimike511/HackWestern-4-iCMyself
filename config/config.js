@@ -86,7 +86,7 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		},*/
+		},*//*
 		{
             module: 'MMM-Facial-Recognition',
             config: {
@@ -123,7 +123,7 @@ var config = {
             //Set your classes here seperated by a space.
             //Shown for all users
             classes: 'default everyone'
-        },
+        },*/
 	]
 
 };
