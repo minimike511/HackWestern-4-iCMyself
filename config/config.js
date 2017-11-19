@@ -38,7 +38,7 @@ var config = {
 			position: "top_left",
 			classes: 'default everyone'
 		},
-		{
+		/*{
 			module: "calendar",
 			header: "US Holidays",
 			position: "top_left",
@@ -51,17 +51,36 @@ var config = {
 				]
 			},
 			classes: 'michael'
-		},
+		},*/
 		{
-			module: "compliments",
-			position: "lower_third",
-			classes: 'harrison michael'
+			module: "msgtoday",
+            position: "lower_third",
+            config: {
+                printName: "handsome"
+            },
+            classes: 'default'
 		},
-		{
+        {
+            module: "msgtoday",
+            position: "lower_third",
+            config: {
+                printName: "Michael"
+            },
+            classes: 'michael'
+        },
+        {
+            module: "msgtoday",
+            position: "lower_third",
+            config: {
+                printName: "Harrison"
+            },
+            classes: 'harrison'
+        },
+		/*{
 			module: "insults",
 			position: "lower_third",
 			classes: 'everyone'
-		},
+		},*/
 		/*{
 			module: "currentweather",
 			position: "top_right",
