@@ -52,6 +52,7 @@ Module.register('MMM-Facial-Recognition',{
 	},
 
 	login_user: function () {
+	Log.log("Hiiiiii");
 
     var self = this;
 

@@ -66,10 +66,9 @@
     "request": "^2.81.0",
     "rrule-alt": "^2.2.5",
     "simple-git": "^1.73.0",
-    "socket.io": "^2.0.2",
+    "socket.io": "^2.0.4",
     "valid-url": "latest",
     "walk": "latest",
-    "watson-developer-cloud": "latest",
-    "python-shell": "latest"
+    "watson-developer-cloud": "latest"
   }
 }
