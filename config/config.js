@@ -55,12 +55,12 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: 'harrison'
+			classes: 'harrison michael'
 		},
 		{
 			module: "insults",
 			position: "lower_third",
-			classes: 'everyone michael'
+			classes: 'everyone'
 		},
 		/*{
 			module: "currentweather",

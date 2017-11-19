@@ -1,11 +1,10 @@
-/*var watson = require('watson-developer-cloud');
-var fs = require('fs');
-var visual_recognition = watson.visual_recognition({
+const watson = require('watson-developer-cloud');
+const fs = require('fs');
+const visual_recognition = watson.visual_recognition({
     api_key: '0121N-TKK90-18D9D-0A2A0-3DVH1',
     version: 'v3',
     version_date: '2016-05-20'
-});*/
-
+});
 
 Module.register("watsonvr", {
     // Default module config.
@@ -28,7 +27,7 @@ Module.register("watsonvr", {
             version_date: '2016-05-20'
         });
 
-        /*try {
+        try {
             var params = {
                 images_file: fs.createReadStream('./db/obama.jpg')
             };
@@ -43,10 +42,10 @@ Module.register("watsonvr", {
             });
         } catch (e) {
             Log.info(e);
-        }*/
+        }
 
         // wrapper.innerHTML = this.config.text;
-        wrapper.innerHTML = Math.random();
+       // wrapper.innerHTML = Math.random();
         return wrapper;
     },
     start: function () {
