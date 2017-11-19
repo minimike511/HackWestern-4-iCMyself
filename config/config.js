@@ -35,7 +35,8 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			classes: 'default everyone'
 		},
 		{
 			module: "calendar",
@@ -48,12 +49,19 @@ var config = {
 						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
 					}
 				]
-			}
+			},
+			classes: 'michael'
 		},
-		/*{
+		{
 			module: "compliments",
-			position: "lower_third"
-		},*/
+			position: "lower_third",
+			classes: 'harrison'
+		},
+		{
+			module: "insults",
+			position: "lower_third",
+			classes: 'everyone michael'
+		},
 		/*{
 			module: "currentweather",
 			position: "top_right",
@@ -96,19 +104,19 @@ var config = {
                 // positive match.  Confidence values below this threshold will be considered
                 // a positive match because the lower the confidence value, or distance, the
                 // more confident the algorithm is that the face was correctly detected.
-                lbphThreshold: 50,
+                lbphThreshold: 40,
                 fisherThreshold: 250,
                 eigenThreshold: 3000,
                 // force the use of a usb webcam on raspberry pi (on other platforms this is always true automatically)
-                useUSBCam: false,
+                useUSBCam: true,
                 // Path to your training xml
                 trainingFile: 'modules/MMM-Facial-Recognition/training.xml',
                 // recognition intervall in seconds (smaller number = faster but CPU intens!)
-                interval: 2,
+                interval: 0.1,
                 // Logout delay after last recognition so that a user does not get instantly logged out if he turns away from the mirror for a few seconds
-                logoutDelay: 15,
+                logoutDelay: 60,
                 // Array with usernames (copy and paste from training script)
-                users: [],
+                users: ["Harrison Chow", "Michael Park"],
                 //Module set used for strangers and if no user is detected
                 defaultClass: "default",
                 //Set of modules which should be shown for every user
@@ -117,13 +125,27 @@ var config = {
                 welcomeMessage: true
             }
 		},
-        {
+        /*{
             module: 'example_module',
             position: 'top_right',
             //Set your classes here seperated by a space.
             //Shown for all users
             classes: 'default everyone'
         },
+        {
+            module: 'example_module',
+            position: 'bottom_right',
+            //Set your classes here seperated by a space.
+            //Shown for all users
+            classes: 'harrison'
+        },
+        {
+            module: 'example_module',
+            position: 'bottom_right',
+            //Set your classes here seperated by a space.
+            //Shown for all users
+            classes: 'michael'
+        },*/
 	]
 
 };
